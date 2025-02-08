@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+:root {
+  --green: #00b8b2;
+  --black: #444d53;
+  --white: #ffff;
+}
+/* custom css */
+* {
+  font-family: "Roboto", serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  text-transform: capitalize;
+  outline: none;
+  box-sizing: border-box;
+  transition: all linear 0.2s;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+header {
+  width: 96%;
+  background-color: var(white);
+  position: fixed;
+  top: 1rem;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 0px;
+  z-index: 1000;
+}
+/* logo name */
+header a {
+  color: var(--black);
+}
+header a:hover {
+  color: var(--green);
+}
+header .logo {
+  font-size: 3rem;
+}
+header .logo span {
+  color: var(--green);
+}
+
+/* navbar link  */
+header .navbar ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .navbar ul li {
+  margin: 0rem 1rem;
+}
+header .navbar ul li a {
+  font-size: 2rem;
+  color: var(--black);
+}
+
+header .navbar ul li .login {
+  color: var(--green);
+  background-color: white;
+  border-radius: 5px;
+  border-color: var(--green);
+}
+header .navbar ul li .login:hover {
+  color: var(--white);
+  background-color: var(--green);
+  border-radius: 5px;
+  font-size: 2rem;
+}
+
+/* header .navbar ul li button { */
+header .navbar ul li button {
+  color: red;
+  border-color: red;
+  align-items: center;
+  display: inline-flex;
+  background-color: white;
+  font-size: 2rem;
+  border-radius: 5px;
+  padding: 0rem 0.5rem;
+}
+header .navbar ul li button p {
+  padding: 0 0.5rem;
+}
+header .navbar ul li button img {
+  height: 25px;
+  width: 20px;
+  padding: 0;
+  margin: 0;
+}
+header .navbar ul li button:hover {
+  color: white;
+  background-color: red;
+  cursor: pointer;
+}
+header .navbar ul li a:hover {
+  color: var(--green);
+}
+
+header .fa-bars {
+  color: var(--green);
+  font-size: 3rem;
+  cursor: pointer;
+  display: none;
+}
+
+header .fa-times {
+  transform: rotate(180deg);
+}
+
+.header-active {
+  top: 0px;
+  padding: 5px 1rem;
+  width: 100%;
+  box-shadow: 0rem 0.2rem rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+body {
+  height: 1000px;
+}
+.form h1 {
+  display: flex;
+}
+.form {
+  height: 50%;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form label {
+  display: flex;
+}
+@media (max-width: 1000px) {
+  html {
+    font-size: 55%;
+  }
+  header .fa-bars {
+    display: block;
+  }
+  header .navbar {
+    position: fixed;
+    top: -100rem;
+    left: 0;
+    width: 100%;
+    background-color: var(--white);
+    opacity: 0;
+  }
+  header .navbar ul {
+    flex-flow: column;
+    padding: 2rem 0;
+  }
+  header .navbar ul li {
+    margin: 1rem 0;
+    width: 100%;
+    text-align: center;
+  }
+  header .nav-toggle {
+    top: 5.5rem;
+    opacity: 1;
+  }
+}
