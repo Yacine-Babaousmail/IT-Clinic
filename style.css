@@ -1,0 +1,477 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+:root {
+  --green: #00b8b2;
+  --black: #253743;
+  --white: #ffff;
+}
+/* custom css */
+* {
+  font-family: "Roboto", serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  outline: none;
+  box-sizing: border-box;
+  transition: all linear 0.2s;
+  /* color: var(--black); */
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+header {
+  width: 96%;
+  /* color: var(--black); */
+  background-color: var(white);
+  position: fixed;
+  top: 1rem;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 0px;
+  z-index: 1000;
+}
+/* logo name */
+header a {
+  color: var(--black);
+}
+header a:hover {
+  color: var(--green);
+}
+header .logo {
+  font-size: 3rem;
+}
+header .logo span {
+  color: var(--green);
+}
+
+/* navbar link  */
+header .navbar ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .navbar ul li {
+  margin: 0rem 1rem;
+}
+header .navbar ul li a {
+  font-size: 2rem;
+  color: var(--black);
+}
+header .navbar ul li a:hover {
+  font-size: 2rem;
+  color: var(--green);
+}
+
+header .navbar ul li .login {
+  color: var(--green);
+  background-color: white;
+  border-radius: 5px;
+  border-color: var(--green);
+  align-items: center;
+  display: inline-flex;
+  background-color: white;
+  font-size: 2rem;
+  padding: 0rem 0.5rem;
+}
+header .navbar ul li .login:hover {
+  color: var(--white);
+  background-color: var(--green);
+  border-radius: 5px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* header .navbar ul li button { */
+header .navbar ul li button {
+  color: red;
+  border-color: red;
+  align-items: center;
+  display: inline-flex;
+  background-color: white;
+  font-size: 2rem;
+  border-radius: 5px;
+  padding: 0rem 0.5rem;
+}
+header .navbar ul li button:hover {
+  color: var(--white);
+  background-color: red;
+  cursor: pointer;
+}
+*/ header .navbar ul li button emergency {
+  color: red;
+  border-color: red;
+  align-items: center;
+  display: inline-flex;
+  background-color: white;
+  font-size: 2rem;
+  border-radius: 5px;
+  padding: 0rem 0.5rem;
+}
+header .navbar ul li button p {
+  padding: 0 0.5rem;
+}
+header .navbar ul li button img {
+  height: 25px;
+  width: 20px;
+  padding: 0;
+  margin: 0 2px;
+}
+
+header .fa-bars {
+  color: var(--green);
+  font-size: 3rem;
+  cursor: pointer;
+  display: none;
+}
+
+header .fa-times {
+  transform: rotate(180deg);
+}
+
+.header-active {
+  top: 0px;
+  padding: 5px 1rem;
+  width: 100%;
+  box-shadow: 0rem 0.2rem rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+body {
+  height: 1000px;
+}
+.home {
+  min-height: 50vh;
+  padding-top: 10rem;
+}
+.home .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 85%;
+  margin: 0 auto;
+}
+.home .row .images img {
+  height: 70vh;
+}
+.home .row .content {
+  text-align: center;
+  font-size: large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.departments {
+  width: 100%;
+  height: 90vh;
+  display: block;
+  background-color: var(--green);
+}
+.departments h1 {
+  text-align: center;
+  padding: 3rem 0;
+  font-size: 3rem;
+  color: white;
+}
+.departments .row1 {
+  padding: 3rem 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.departments .row1 :hover {
+  cursor: pointer;
+}
+.departments .row1 button {
+  border-radius: 100%;
+  border: none;
+  margin: 1rem 1rem;
+  height: 18rem;
+  width: 18rem;
+  align-items: center;
+  background-color: white;
+}
+.departments .row1 button img {
+  height: 12rem;
+  width: 12rem;
+}
+.departments .row1 button img:hover {
+  transform: scale(1.1);
+}
+.departments .row1 h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+}
+
+.departments .row2 {
+  padding: 0rem 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.departments .row2 :hover {
+  cursor: pointer;
+}
+
+.departments .row2 button {
+  border-radius: 100%;
+  border: none;
+  margin: 1rem 1rem;
+  height: 18rem;
+  width: 18rem;
+  align-items: center;
+  background-color: white;
+}
+.departments .row2 button img {
+  height: 12rem;
+  width: 12rem;
+}
+.departments .row2 button .nephro {
+  border-radius: 100%;
+}
+.departments .row2 button img:hover {
+  transform: scale(1.1);
+}
+
+.departments .row2 h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+}
+#online_therapy {
+  justify-content: space-evenly;
+  display: flex;
+  color: var(--black);
+  background-color: #c7f4f2;
+  padding: 50px 50px 0px 50px;
+  height: 300px;
+}
+
+.onlineDoc img {
+  height: 250px;
+  width: 250px;
+}
+.online-doc-content {
+  padding: 0;
+  height: 250px;
+  width: 300px;
+  font-size: 20px;
+  text-align: center;
+}
+.online-doc-content h1 {
+  font-display: bold;
+  margin-bottom: 10px;
+}
+.online-doc-content button {
+  background-color: var(--green);
+  margin-top: 10px;
+  color: var(--white);
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+.online-doc-content button:hover {
+  background-color: var(--white);
+  color: var(--green);
+  cursor: pointer;
+}
+#partners {
+  height: 300px;
+}
+#partners h1 {
+  text-align: center;
+  color: var(--black);
+  font-size: 30px;
+  padding: 20px;
+}
+#partners .images {
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+  padding: 0 250px;
+}
+#partners .images img {
+  height: auto;
+  width: auto;
+}
+footer {
+  background-color: var(--green);
+  color: white;
+  height: 150px;
+}
+footer h1 {
+  font-size: 20px;
+  text-align: center;
+  padding: 20px;
+}
+footer .contact {
+  align-content: center;
+  justify-content: space-between;
+  padding: 0px 100px;
+  display: flex;
+}
+footer .contact p {
+  font-size: 20px;
+}
+footer .contact button {
+  background-color: transparent;
+  border: none;
+}
+footer .contact button :hover {
+  color: white;
+  cursor: pointer;
+}
+
+/* media query  */
+@media (max-width: 1000px) {
+  html {
+    font-size: 55%;
+  }
+  header .fa-bars {
+    display: block;
+  }
+  header .navbar {
+    position: fixed;
+    top: -100rem;
+    left: 0;
+    width: 100%;
+    background-color: var(--white);
+    opacity: 0;
+  }
+  header .navbar ul {
+    flex-flow: column;
+    padding: 2rem 0;
+  }
+  header .navbar ul li {
+    margin: 1rem 0;
+    width: 100%;
+    text-align: center;
+  }
+  header .nav-toggle {
+    top: 5.5rem;
+    opacity: 1;
+  }
+  .home .row {
+    flex-flow: column;
+  }
+  #departments {
+    width: 100%;
+    height: 50%;
+    display: block;
+    background-color: var(--green);
+  }
+  .departments h1 {
+    text-align: center;
+    padding: 1rem;
+    font-size: 3rem;
+    color: white;
+  }
+  .departments .row1 {
+    padding: 4rem 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .departments .row1 button {
+    border-radius: 100%;
+    border: none;
+    margin: 1rem 1rem;
+    height: 15rem;
+    width: 15rem;
+    align-items: center;
+    background-color: white;
+  }
+  .departments .row1 h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+  }
+  .departments .row1 button img {
+    height: 10rem;
+    width: 10rem;
+  }
+  .departments .row2 {
+    padding: 0rem 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .departments .row2 button {
+    border-radius: 100%;
+    border: none;
+    margin: 1rem 1rem;
+    height: 15rem;
+    width: 15rem;
+    align-items: center;
+    background-color: white;
+  }
+  .departments .row2 h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+  }
+  .departments .row2 button img {
+    height: 10rem;
+    width: 10rem;
+  }
+  #online_therapy {
+    justify-content: space-evenly;
+    width: 100%;
+    display: flex;
+    color: var(--black);
+    background-color: #c7f4f2;
+    padding: 50px 50px 0px 50px;
+    height: 300px;
+  }
+
+  .onlineDoc img {
+    height: 100%;
+    width: 100%;
+  }
+  .online-doc-content {
+    padding: 0;
+    height: 250px;
+    width: 100%;
+    text-align: center;
+  }
+  .online-doc-content h1 {
+    font-display: bold;
+    margin-bottom: 5px;
+  }
+  #partners {
+    height: 300px;
+    width: 100%;
+  }
+  #partners .images {
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    padding: 0 100px 0 100px;
+  }
+  footer {
+    background-color: var(--green);
+    color: white;
+    height: 150px;
+  }
+  footer h1 {
+    font-size: 25px;
+    text-align: center;
+    padding: 20px;
+  }
+  footer .contact {
+    align-content: center;
+    justify-content: space-evenly;
+    padding: 0px 100px;
+    display: flex;
+  }
+  footer .contact p {
+    font-size: 20px;
+  }
+}
